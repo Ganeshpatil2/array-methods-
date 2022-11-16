@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./arraymethod.css">
+     <title>Array Method</title>
+    </head>
+    <body>
+        <h2>Array Methods</h2>
+       <p id="demo"></p>
+       <p id="dd"></p>
+       <p id="member  "></p>
+    
+     <script>
+ const  game = [
+ {
+"name":"Beat Down: Fists of Vengeance ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"10.000 Bullets ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"25 to Life ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"50 Cent: Blood on the Sand ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"50 Cent: Bulletproof ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Afro Samurai ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Aliens vs. Predator ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Area 51 ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Army of Two ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Army of Two: The 40th Day ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Army of Two: The Devil's Cartel ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Call of Duty 4: Modern Warfare ",
+"reason":"Banned because of high-impact violence related to incentives and rewards via an unlockable Arcade mode."
+},
+{
+"name":"Call of Duty: Black Ops ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Call of Duty: Modern Warfare 2 ",
+"reason":"Banned because of high-impact violence related to incentives and rewards via an unlockable Arcade mode."
+},
+{
+"name":"Call of Duty: World at War ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Carmageddon: Max Damage ",
+"reason":"Banned because of high-impact violence related to incentives and rewards."
+},
+{
+"name":"Clive Barker's Jericho ",
+"reason":"Originally banned because of high-impact gory violence. The ban was later lifted."
+},
+{
+"name":"Cold Fear ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Cold Winter ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Condemned: Criminal Origins ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Condemned 2: Bloodshot ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Dead Island: Riptide ",
+"reason":"Banned because of high-impact gory violence."
+},
+
+{
+"name":"Dead Rising 2 ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Dead Rising 2: Off the Record ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Dead Rising 3 ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Dead Rising: Chop Till You Drop ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Dead Space ",
+"reason":"Banned because of high-impact gory violence. A censored version was released.[41]"
+},
+{
+"name":"Dead to Rights ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Dead to Rights II ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Inversion ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Kane & Lynch 2: Dog Days ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Land of the Dead: Road to Fiddler's Green ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Left 4 Dead ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Left 4 Dead 2 ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Little Britain: The Video Game ",
+"reason":"Banned because of a mini-game involving homophobia related to incentives and rewards."
+},
+{
+"name":"MadWorld ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Manhunt ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Manhunt 2 ",
+"reason":"Banned because of high-impact gory violence."
+},
+
+{
+"name":"Mortal Kombat ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Mortal Kombat (2011 video game) ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Mortal Kombat II ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Mortal Kombat 3 ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Mortal Kombat: Armageddon ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Mortal Kombat: Shaolin Monks ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"NARC ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Nitro Family ",
+"reason":"Banned because of high-impact gory violence."
+},
+
+{
+"name":"Postal (video game) ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Postal 2 ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Postal III ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Predator: Concrete Jungle ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Quake 4 ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Red Ninja: End of Honor ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Reservoir Dogs ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Resident Evil: Operation Raccoon City ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Resident Evil: The Umbrella Chronicles ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Return to Castle Wolfenstein ",
+"reason":"Originally given a 16+ rating with Nazi references censored. Later banned for high-impact gory violence."
+},
+{
+"name":"Saints Row ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Saints Row 2 ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Saints Row: The Third ",
+"reason":"Originally banned because of high-impact gory violence. A censored version was released. The ban was lifted in 2019."
+},
+{
+"name":"Scarface: The World Is Yours ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Shellshock: Nam '67 ",
+"reason":"Was originally released unrated in some retail stores in Germany, before being banned because of high-impact gory violence."
+},
+{
+"name":"Shellshock 2: Blood Trails ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Sleeping Dogs ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Soldier of Fortune: Payback ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Splatterhouse ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Syndicate ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"The Club (video game) ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"The House of the Dead: Overkill ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"The Suffering ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"The Suffering: Ties That Bind ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"The Warriors ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Tom Clancy's Rainbow Six: Vegas 2 ",
+"reason":"Banned because of high-impact violence related to incentives and rewards. A censored version was released."
+},
+{
+"name":"Total Overdose ",
+"reason":"Was originally released unrated in some retail stores in Germany, before being banned because of high-impact gory violence."
+},
+{
+"name":"True Crime: New York City ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+},
+{
+"name":"Wolfenstein ",
+"reason":" because of high-impact gory violence and Nazi references."
+},
+{
+"name":"X-Men Origins: Wolverine (PS3, Xbox 360, PC) ",
+"reason":"Banned because of high-impact gory violence."
+}
+]; 
+
+
+
+//  this is isArray method which is show true if the array.isArray otherwise false 
+let result= Array.isArray(game);
+document.getElementById("demo").innerHTML = result
+console.log("isArray",result);
+// expected return is true 
+/*----------------------------------------------isArray-----------------------------------------------------------------------------*/
+// this length :The length property sets or returns the number of elements in an array.
+
+// const game = [ total element in array]; 
+let text = "";
+for (let i = 0; i < game.length; i++) {
+    // ek ek value plus krun total krnar array chi length 
+    text += game[i] + "<br>";
+}
+console.log("length",game); // game navachi length kit he sanganr console.log vr
+// expected return is 76
+
+/*------------------------------------Length---^--------------------------------------------------------------------------------------*/
+
+// join :join() returns an array as a string here join with  ** u can able to change
+// const game = [ total element in array]; 
+console.log ("join",game.join("**"));
+// expected return is join all objects in array with ** symbol 
+
+/*---------------------------------------------join ---^-----------------------------------------------------------------------------*/
+
+
+// The push() method adds new items to the end of an array.
+// const game = [ total element in array]; 
+game.push({"name": "ganesh", "Reason": "strict" }) //new items 
+console.log ("push",game);
+// expected return is adds new items to the end of an array.
+
+/*------------------------------------------------------push-^----------------------------------------------------------------------*/
+
+// The pop() method removes (pops) the last element of an array.
+
+// const game = [ total element in array]; 
+console.log ("pop",game.pop());
+// expected return is 
+//  {
+// "name":"X-Men Origins: Wolverine (PS3, Xbox 360, PC) ",
+// "reason":"Banned because of high-impact gory violence."
+// }
+/*-----------------------------------------------pop--^----------------------------------------------------------------------------*/
+
+
+// The shift() method removes the first item of an array.
+
+// const game = [ total element in array]; 
+ let abc = game.shift();
+//  declare then define the variable
+{console.log("shift",abc)};
+// expected return is: removes 1st item from array
+// { "name":"10.000 Bullets ",
+// "reason":"Banned because of high-impact gory violence."}
+/*------------------------------------------------------------shift^-----------------------------------------------------------------*/    
+
+// The unshift() method adds new elements to the beginning of an array.
+
+// const game = [ total element in array]; 
+let xyz = game.unshift({"name": "Mayur", "Reason": "active"});
+{console.log("unshift",game)};
+ // expected return is: adds new elements to the beginning of an array.
+//  {"name": "Mayur", "Reason": "active"}
+
+/*-----------------------------------------------unshift ^------------------------------------------------------------------------------*/
+
+// The splice() method adds and/or removes array elements.
+const its = game ;
+// declare variable
+game.splice(2, 0, {name:"Chirag", reason:"Hiren"});
+// value position no., no of remove Element which is put inside  
+console.log ("splice",its);
+// expected return is: add above mentioned values at index no. 2 
+/*-----------------------------------------splice^------------------------------------------------------------------------------------*/
+
+// The slice() method returns selected elements in an array, as a new array.
+const acd = game ;
+//declare variable 
+const ace = game.slice(3, 8)
+// apply slice from index no. 3 to index no. 8 
+console.log("slice",ace);
+// expected return is: 5 values return from 3 to 8 index no. 
+
+/*-----------------------------------------------------------Slice^------------------------------------------------------------------*/
+
+//The Array.reverse() method reverses the order
+const jan = game;
+console.log ("reverse",jan.reverse());
+// expected return is: sort element of the array in reverse order(Z to A)
+/*--------------------------------reverse^---------------------------------------------------------------------------------------------*/
+
+// The valueOf() method returns the array itself.
+const fruit = game;
+const myArray = fruit.valueOf();
+console.log("valueOf",game);
+// expected return is: 77
+/*----------------------------------------valueOf^-------------------------------------------------------------------------------------*/
+// The copyWithin() method copies array elements to another position in the array.
+const sam = game;
+ sam.copyWithin(4,1);
+ // at no.4 positon is copy of 1 no. element with copyWithin 
+ console.log("copyWithin",game);
+//  expected return is: 1 no element copy on 4 no. position  
+/*--------------------------------------------------------------copyWithin^---------------------------------------------------------------*/
+// The concat() method concatenates (joins) two or more arrays.returns a new array, containing the joined arrays.
+var array1=["JS","React","Ember"];
+var array2=["Karthick","Anu","Lekha"];
+var array3=["eduCBa","udemy", "shaw"];
+var array4=["1000","1200","500"];
+// declare array 4
+var merger =array1.concat(array2, array4, array3);
+// declare array 5 (merger) = 1+2+3+4  its concat u can add more arrays with the comma.
+document.write(merger);
+console.log("concate",merger);
+// expected return is: new array with above mentioned values at bottom 
+/*-----------------------------------------------------concat^------------------------------------------------------------------------*/
+
+// The sort() sorts the elements of an array.
+game.sort();
+// order an array of objects with name
+game.sort(function (a, b) {
+  if (a.name < b.name) {
+    return -1;
+  }
+  return 0;
+});
+console.log("sort",game);
+// expected return is: sort element of the array are A to Z order
+/*------------------------------------------------sort ^-----------------------------------------------------------------------------*/
+game.sort();
+game.sort(function (a, b) {
+  if (a.name > b.name) {
+    return -1;
+  }
+  return 0;
+});
+console.log("sort",game);
+// expected return is: sort element of the array are Z to A  order
+/*------------------------------------------------sort ^-----------------------------------------------------------------------------*/
+
+//fill() fills specified elements in an array with a value.
+const fr = game;
+fr.fill({name:'john' ,reason:'muscular'}, 5,10);
+//object add in array from 5 no to 10 number element 
+console.log("fill",fr);
+// expected return is: above mentioned object show on 5 to 9 no. element 
+
+/*------------------------------------------------fill^-----------------------------------------------------------------------------*/
+
+
+//  IndexOf :returns the first index (position) of a specified value.
+let index = game.indexOf("The Warriors");
+console.log("indexof",game);
+// expected return is: sum of array (77)
+/*------------------------------------------------indexof ^-----------------------------------------------------------------------------*/
+
+const cbz =  game;
+
+for (const [key, value] of Object.entries(cbz)) {
+  console.log(`${key}: ${value}`);
+}
+/*-------------------------------------------------------entries^-------------------------------------------------------------------------*/
+/*----- Object MEthods this is Keys MEthods -----------------------------*/
+
+// key method returns an Array Iterator object with the keys of an object.
+
+const fruits = ["Banana", "Orange", "Apple", "Mango","Kiwi"];
+const keys = Object.keys(fruits);
+console.log(keys);
+
+/*---------------------*/
+
+const frui = "abcdefghijklmnopqrstuvwxyz";
+const kees = Object.keys(frui);
+console.log(kees);
+
+/*------------------------------*/
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+const ke = Object.keys(person);
+console.log(ke);
+ /*-------------------------------------------------keys method^--------------------------------------------------------------*/
+
+
+let are = game;
+let a = are.map((value,index,array )=>{ (value,index,array) 
+console.log("value",index);
+})
+
+console.log("are",are);
+ /*-----------------------------------------map method^ ------------------------------------------*/
+ 
+ 
+var gamez = [
+{
+"name":"The Warriors ",
+"reason":"Banned because of high-impact gory violence."
+},
+{
+"name":"Tom Clancy's Rainbow Six: Vegas 2 ",
+"reason":"Banned because of high-impact violence related to incentives and rewards. A censored version was released."
+},
+{
+"name":"Total Overdose ",
+"reason":"Was originally released unrated "
+},
+{
+"name":"Total Overdose ",
+"reason":"Was originally released unrated in "
+},
+{
+"name":"Total Overdose ",
+"reason":"Was originally released unrated in some "
+},
+{
+"name":"Total Overdose ",
+"reason":"Was originally released unrated in some retail "
+},
+{
+"name":"True Crime: New York City ",
+"reason":"Banned because of high-impact gory violence. A censored version was released."
+}
+];
+var pri = gamez.filter(function(xy) {
+  return xy.name == "Total Overdose ";
+}) ;
+console.log("myfilter",pri);
+
+/*--------------------------------------------filter method^---------------------------------------------------------------------*/
+
+
+const boys = [
+              { name: "amol" },
+              { name: "ramesh" },
+              { name: "suresh" },
+              { name: "naresh" },
+       ];
+       function nev(color) {
+              return color.name == "naresh";
+       }
+       console.log(boys.findIndex(nev));
+/*------------------------------------------------------------------------------*/
+const swa = game;
+
+function kam(names){
+  return names.name =="Beat Down: Fists of Vengeance ";
+}
+console.log(game.findIndex(kam));
+
+
+
+
+
+
+     </script>
+
+    </body>
+</html>
