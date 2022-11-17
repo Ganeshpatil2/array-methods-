@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>TASK22</title>
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./task22.css">
+  
+</head>
+<body>
+    <div class=" head col-12"
+         style="display:flex;border-bottom: 1px solid gainsboro;padding:15px;background-color: grey;">
+         <div class="x1">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="col-1">
+              <img src="https://cdn.shopify.com/shopifycloud/web/assets/v1/f5416ec27e17f00a67f8c2d6603088baa6635c7bc2071b4f6533c8d260fc8644.svg"
+              style="max-width: 75px;">
+        </div>
+        <div class="col-9">
+            <h3 style="color: black; font-size: 24px;">Unsaved Product</h3>
+        </div>
+        <div class="col-2 h1">
+            <input type="button" class="Discard" id="btn1" value="Discard">
+            <input type="button" class="save" id="btn2" value="save">
+        </div>
+    </div>
+    <div class="col-12 menu" style="display: flex;">
+        <div class="col-2 nav_1" style="color:#202223;">
+            <div class="gUL" ul style="font-size: 15px;">
+                <li><i class="fa fa-home">&nbsp&nbsp</i>Home</li>
+                <li><i class="fa-solid fa-car">&nbsp&nbsp</i>orders</li>
+                <li class="active"> <i class="fa fa-tag ">&nbsp&nbsp</i>Product</li>
+                <div class="gaUL" ul style="margin-left: 30px; color: gray; font-size: 15px;">
+                    <li>Inventor</li>
+                    <li>Transfers</li>
+                    <li>collection</li>
+                    <li>Gift cards</li>
+                    <li>Price List</li>
+                </ul> </div>
+                <li> <i class="fa-solid fa-user">&nbsp&nbsp</i>Customers</li>
+                <li> <i class="fa-sharp fa-solid fa-chart-simple">&nbsp&nbsp</i>Analytics</li>
+                <li> <i class="fa-solid fa-bullseye">&nbsp&nbsp&nbsp</i>Marketing</li>
+                <li> <i class="fa-solid fa-percent">&nbsp&nbsp&nbsp</i>Discount</li>
+            </ul></div>
+            <div style="margin-top: 13%; font-size: 15px;">
+                <p style="color: darkgray; margin-left: 10px;">Sales Chanles<i class="fa-solid fa-chevron-right"
+                 style="float:right;margin-right:10%;"></i></p>
+            </div>
+            <div style="padding-top: 5%;  font-size: 15px;">
+                <a href="#" style="text-decoration: none;color: black;margin-left: 10px;"><i class="fa-solid fa-store"
+                style="margin-right:10px" class="active"></i>Online
+                store<i style="float: right;margin-right: 10%;"></i></a>
+            </div>
+            <div class="se1" style=" font-size: 15px; margin-top: 40%; margin-left: 10%;">
+                <i class="fa fa-gear" style="float: left;"></i>
+                <p style="padding-left: 15%;">Setting</p>
+            </div>
+        </div>
+        <div class="col-10 main">
+            <div class="top">
+                <a href="./pag2.html"><i class="fa-solid fa-arrow-left-long" style="border: 2px solid gainsboro;"> </i></a>
+                <span class="add">Add Product</span>
+            </div>
+            <div class="ml">
+                <div class="left">
+                    <div class="bottom">
+                        <div class="bottom-left">
+                            <div class="title">
+                                <label>Title</label>
+                            </div>
+                            <div class="middle">
+                                <div class="middle-left">
+                                    <input type="text" name="title" id="txt" placeholder="Short sleeve t-shirt">
+                                </div>
+                            </div>
+                            <div class="last">
+                                <label>Description</label>
+                            </div>
+                            <div class="texta">
+                                <textarea name="textarea" id="product-description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media1">
+                            <label><b>Media</b></label>
+                        </div>
+                        <div class="photo">
+                            <label for="myfile"></label>
+                            <input type="file" id="myfile" name="myfile">
+                            <input type="file" id="myfile" name="myfile">
+                           
+                        </div>
+                          <!-- <div id="abccc"><p>Accepts images, videos or 3D models</p></div> -->
+                    </div>
+                    <div class="pricing">
+                        <div class="media1">
+                            <label><b>Pricing</b></label>
+                        </div>
+                        <div style="display:flex;">
+                            <div class="price">
+                                <p>Price</p>
+                                <div class="input">
+                                    <input type="text" placeholder="&#x20b9;.00.00" class="pre" id="sp"> </input>
+                                </div>
+                            </div>
+                            <div class="price1">
+                                <p> Compare at price</p>
+                                <div class="input">
+                                    <input type="text" placeholder="00.00" class="pre"></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cheakbox">
+                            <input type="checkbox" class="c1">
+                            <table>Charge tax on this product</table>
+                        </div>
+                        <div class="cost">
+                            <p>Cost per item</p>
+                            <div class="inputz">
+                            <input type="number " placeholder="&#x20b9;.00.00" class="pre" id="cp"  oninput="calculate()";>
+                            <div id="mr">Margin : </div>
+                            <div id="pr">Profit : </div><br>     
+                        </div>
+                        <p style="color:grey">Customers wont see this</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="right">
+                    <div class="rp">
+                        <div class="right-product">
+                            <div class="ps"><b>Product status</b></div>
+                        <div class="active-select">
+                            <select class="select">
+                                <option>Active</option>
+                                <option>Darft</option>
+                            </select>
+                        </div>
+                        <div class="t1">
+                            <span><p>This product will be available to 1 sales channels.</p></span>
+                        </div>
+                        <div class="channel">
+                            <span>SALES CHANNELS AND APPS</span>
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox" class="pl" id="chek2">&nbspSelect all
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox" id="chek1" class="pl" name="onlineabc">&nbspOnline store
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox" class="pl" id="chek2">&nbspPoint of sale
+                        </div>
+                        <div class="checkd">
+                            <input type="checkbox"class="pl" id="chek2">&nbspBuy button
+                        </div>
+                    </div>
+                    <div class="po">
+                        <div class="right-organization">
+                           <b>Product organization</b>
+                        </div>
+                        <div class="type">
+                            <span>Type</span>
+                        </div>
+                        <div class="input">
+                            <input type="text " class="type-in"  placeholder="search types">
+                        </div>
+                        <div class="type">
+                            <span>Vendor</span>
+                        </div>
+
+                        <div class="input" onkeyup="newE()">
+                            <div id="autoComplete">
+                                <input onkeyup="search(this.value)" type="search" id="search-text"/>
+                              <p id="rajal"><i class="fa-sharp fa-solid fa-circle-plus"></i>
+                                <span class="addBtn" onclick="change()">Add</span></p>
+                                <div id="dropdown" style="color: black;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="type">
+                            <span>Collections</span>
+                        </div>
+                        <div class="input">
+                            <input type="text" class="type-in">
+                        </div>
+
+                        <div class="type" >
+                            <span>Tags</span></div>
+                            <div class="Tag"onkeyup="addTag(event)">
+                                <input type="search"onclick="myFunction()" class="dropinput" autocomplete="off"
+                                  id="rocky" onkeyup="filterFunction()" placeholder="find or create tags" ><br>
+                                  <div id="section">
+                                    <section></section>
+                                     <p id="paragraph"></p>
+                                     </div>
+                                  <div id="dropdown22" class="MYdropdown-content" class="input-Tag">
+                                    <ul id="myUL">
+                                      <i class="fa-sharp fa-solid fa-circle-plus" style="margin-left: 5%; padding-top:4px; "></i><span id="aabb" onclick="newElement()" class="addBtn">Add</span>
+                                      <div id="autocompletebox1">
+
+                                      <li class="cb-item"><label for="myCheck0"><input type="checkbox" name="check"class="checkbox" id="myCheck0" style="width: 5%;" onchange="updateCheckboxStatus(this)" value="ganesh">Ganesh</label></li>
+                                      <li class="cb-item"><label for="myCheck1"><input type="checkbox" name="check"class="checkbox" id="myCheck1" style="width: 5%;" onchange="updateCheckboxStatus(this)" value="ramesh">Ramesh</label></li>
+                                      <li class="cb-item"><label for="myCheck2"><input type="checkbox" name="check"class="checkbox" id="myCheck2" style="width: 5%;" onchange="updateCheckboxStatus(this)" value="dinesh">Dinesh</label></li>
+                                      <li class="cb-item"><label for="myCheck3"><input type="checkbox" name="check"class="checkbox" id="myCheck3" style="width: 5%;" onchange="updateCheckboxStatus(this)" value="jinesh">Jinesh</label></li>
+                                      <li class="cb-item"><label for="myCheck4"><input type="checkbox" name="check"class="checkbox" id="myCheck4" style="width: 5%;" onchange="updateCheckboxStatus(this)" value="manesh">Manesh</label></li>
+                                      
+                                    </div>
+                                    </ul>
+                                  </div>
+                                  <div class="tag-container">
+                                  </div>
+                                </div>
+                              
+                         </div>
+                    <div class="os">
+                        <div class="right-product"><b>Online store</b>
+                        </div>
+                        <div class="theme">
+                            <span style="margin-left: 10px;">Theme templete</span>
+                            <div class="active-select1">
+                                <select  class="type-in" disabled>
+                                    <option>Defult product</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+                  <script src="./task22.js"></script>
+</body>
+
+</html>
+
+
