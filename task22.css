@@ -1,0 +1,451 @@
+@media only screen and (max-width: 710px) {
+    .nav_1{ display: none; }
+    .head { display: none; }
+    .ml { flex-direction: column; }
+    .col-1{ display: none; }
+}
+@media only screen and (max-width: 710px){
+ .head .x1 { display: block; }
+ .head .col-1 { display: none;}
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  }
+
+body{ margin:0;}
+
+.x1 { display: none;}
+
+.se1{ padding-top: 50px; }
+
+h3 { margin-left: 38.5%;
+    width: 15%;
+}
+
+.h1 {
+    display: flex;
+    margin-right: 13%;
+   }
+
+#btn1, #btn2 {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+#btn2 {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.menu {
+    position: fixed;
+    height: 90%;
+    
+}
+.nav_1 {
+    border-right: 1px solid gainsboro;
+    background-color: whitesmoke;
+    width: 14.5%;
+}
+li {
+    display: block;
+    padding: 5px;
+    padding-left: 12px;
+    margin: 0px;
+    font-size: 18px;
+}
+.fa-home { margin-top: 10px; }
+
+div .active {
+    color: green;
+    border-left: 2px solid green;
+}
+.menu li:hover{ background-color: #ccc; }
+/* center */
+.main {
+    position: relative;
+    flex: 1 1;
+    padding-left: 18%;
+    padding-right: 10%;
+    align-items: flex-start; 
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+.ml {display: flex;}
+
+.top{
+    padding: 20px;
+    padding-left: 0px;
+    width: 20%; 
+}
+
+.top i{
+    border: 1.5px solid lightgray;
+    border-radius: 3px;
+    padding:10px;
+    color: black;
+}
+.add {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/* left side  */
+  /* .left{
+    width: 50%;
+ } */
+.bottom {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    margin-right: 10px;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.bottom-left { flex: 1 1 ;}
+.middle-left { padding: 1px 0px 10px 0px; }
+#txt{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+.last{
+    background:white;
+    border: 1px solid lightgray;
+    border-bottom: none;
+    padding: 10px 0px 10px 0px;
+    padding-left: 10px;
+    border-radius: 8px 8px 0px 0px;
+}
+#product-description{
+    max-width: 100%;
+    min-height: 9.375rem;
+    min-width: 100%;
+    border-color:lightgray;
+    border-radius: 0px 0px 8px 8px;
+}
+.media {
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.media1{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.photo{
+    display: flex;
+    border: 2px dashed grey;
+    padding: 5%;
+    border-radius: 8px;
+    
+}
+.photo input {
+    background-color: white;
+    border: none;
+}
+.pricing {
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.price , .price1{
+    width: 50%;
+    margin: 10px;
+}
+.pricing input{
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+.pre{
+    width: 100%;
+    padding: 8px;
+}
+
+.cheakbox { margin: 10px; }
+ .cost{
+    border-top: 1px solid gainsboro;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+.inputz {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+#cp{  width: 45%; }
+
+/* -------------right --------------------------------------*/
+
+.right{padding-left: 5px; }
+  
+.active-select {
+    padding: 10px;
+    border-radius: 6px;
+}
+.select{
+    width: 100%;
+    padding: 10px;
+    border-color: gainsboro;
+    border-radius: 6px;
+}
+.ps{ padding-left: 10px; }
+
+.t1 {
+    border-bottom: 1px solid gainsboro;
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.channel {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+ }
+.btn {
+    margin: 0px 20px 10px 20px;
+    border-bottom: 1px solid gainsboro;
+}
+#b1 {
+    background-color: white;
+    border: 1px solid white;
+    color: blue;
+}
+.checkd { margin-left: 10px;
+           padding-bottom: 8px; }
+
+.right-organization {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.right-product {
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-right: 8px;
+}
+.po {
+    background-color: white;
+    border-radius: 8px;
+   padding-bottom: 8px;
+   margin-bottom: 15px;
+   margin-right: 5px;
+   
+}
+.type, .input {
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.type-in {
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid gainsboro;
+}
+.os {
+    border-radius: 8px;
+    background-color: white;
+    margin-right: 5px;
+}
+.active-select1 { 
+    padding: 8px  15px 8px 15px;
+  }
+
+  /*----------------------------------Vendor--------------------------*/
+                    
+        
+        #dropdown {
+            position: absolute;
+            box-sizing: border-box;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            width: 19.6%;
+            overflow: auto;
+            color: black;
+            background-color: whitesmoke;
+            z-index: 1;
+            display:none;
+           
+        }
+        #autoComplete input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid gainsboro;
+        }
+        #dropdown.active { display: block;}
+
+        #dropdown .option{
+            display: flex;
+            align-items: center;
+            height: 30px;
+            padding-left: 10px;
+        }
+        .dropdown label:hover {background-color: #808588;}
+
+        #dropdown .option:hover{
+          background-color: #E9E9E9;
+          cursor: pointer;
+        }
+        #dropdown.option:last-child{ border: 0px; }; 
+
+        
+            
+
+
+/*-------------------------------------tag search----------------------------------*/
+
+
+#rocky {
+    box-sizing: border-box;
+    background-position: 1px 5px;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 10px 19px 12px 10px;
+    
+    
+  }
+  .Tag {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 320px;
+  }
+  .MYdropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    min-width: 99%;
+    padding-top: 0px;
+    z-index: 1;
+    margin-left: 0px;
+  }
+  .MYdropdown-content label {
+    color: black;
+    padding: 3px 5px 3px 5px ;
+    text-decoration: none;
+    display: block;
+    height: 25px;
+    overflow: y;
+    
+  }
+
+
+  .tag-container .tag .tag-close {
+    cursor: pointer;
+    margin-left: 0px;
+    font-size: 15px;
+  }
+
+  .Tag input {
+    width: 318px;
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    margin: 5px 0px 5px 0px;
+    padding: 12px 5px 12px 8px;
+    font: 12px arial;
+  }
+
+  .Tag-items {
+    position: absolute;
+    border: 1px solid gainsboro;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .Tag-items div:hover {
+    background-color: whitesmoke;
+  }
+
+  .Tag label:hover {background-color: #ddd;}
+  .show {display: block;}
+  .cb-item {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+  }
+
+    .cb-item:hover, .cb-item:hover > label:visited {
+        background-color:#E9E9E9;
+    }
+
+  ul{
+  margin:0;
+  padding:0;
+  padding-left: 5px;
+  font-size: 15px;
+  }
+
+  #section span{
+    display: inline-block;
+    background:lightgrey;
+    font-size: 14px;
+    margin: 3px 1px 0px 4px;
+    border-radius: 5px;
+    cursor: default;
+    padding: 1px 2px 2px 2px;
+  }
+
+  .tag-container .tag {
+    display: inline-block;
+    background: lightgrey;
+    font-size: 14px;
+    padding: 3px 5px 3px 5px;
+    margin: 3px 1px 0px 3px ;
+    border-radius: 5px;
+    text-transform: lowercase;
+    cursor: default;
+  }
+
+
+
+
+    
+  #rajal {
+    display: none;
+    border: 1px solid gainsboro;
+    padding: 6px;
+    margin-bottom: 0px;
+   
+}
